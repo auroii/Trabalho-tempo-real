@@ -141,6 +141,6 @@ int main ()
   printf ("Average loop time: %u\n", (int) average_loop_time);
   printf ("Minimum loop time: %u\n", (int) min_loop_time);
   printf ("Maximum loop time: %u\n", (int) max_loop_time);
-  free(values);   
+  for(i = 0; i < 3; ++i) free(values[i]);   
   return 0;
 }
